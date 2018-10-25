@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Head from "next/head";
+import withLayout from "../lib/withLayout";
 
-export default () => (
-  <div>
+const Index = () => (
+  <>
     <Head>
       <title>Store</title>
     </Head>
@@ -10,5 +11,7 @@ export default () => (
     <Link href={"/about"}>
       <a>About page</a>
     </Link>
-  </div>
+  </>
 );
+
+export default withLayout(Index);
