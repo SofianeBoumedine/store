@@ -1,4 +1,4 @@
-# Nomad Store
+# Store
 
 eCommerce PWA Built with NextJS and GraphCMS
 
