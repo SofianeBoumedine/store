@@ -13,11 +13,11 @@ eCommerce PWA Built with NextJS and GraphCMS
 - [x] Shared Components
 - [x] Dynamic Pages
 - [x] Pretty URLs
-- [ ] Styles on NextJS
+- [x] Styles on NextJS
 
 # NextJS Practice Project
 
-- [ ] Defining the Pages
-- [ ] Custom App Component
-- [ ] Custom Document Component
-- [ ] Fetching Data with NextJS
+- [x] Defining the Pages
+- [x] Custom App Component
+- [x] Custom Document Component
+- [x] Fetching Data with NextJS
