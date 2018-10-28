@@ -6,9 +6,13 @@
   "author": "Geonwoo-Jeong <geonwoo.jeong@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "apollo-boost": "^0.1.18",
     "express": "^4.16.4",
+    "graphql": "^14.0.2",
     "next": "^7.0.2",
+    "next-with-apollo": "^3.2.1",
     "react": "^16.6.0",
+    "react-apollo": "^2.2.4",
     "react-dom": "^16.6.0"
   },
   "scripts": {
