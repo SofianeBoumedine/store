@@ -1,14 +1,18 @@
 import Head from "next/head";
 import { withRouter } from "next/router";
 
-const Post = props => (
+const Movie = props => (
   <>
     <Head>
-      <title>{props.router.query.title} | Store</title>
+      <title>{props.title} | Store</title>
     </Head>
-    <h1>{props.router.query.title}</h1>
+    <h1>{props.title}</h1>
     <p>lalalallalalalala</p>
   </>
 );
 
-export default withRouter(Post);
+Movie.getInitialProps = async () => {
+  return { title: "somewhere" };
+};
+
+export default withRouter(Movie);
