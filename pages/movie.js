@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { withRouter } from "next/router";
-import withLayout from "../lib/withLayout";
 
 const Post = props => (
   <>
@@ -12,4 +11,4 @@ const Post = props => (
   </>
 );
 
-export default withLayout(withRouter(Post));
+export default withRouter(Post);
