@@ -10,6 +10,13 @@ app
   .then(() => {
     const server = express();
 
+    server.get("/product/:id", (req, res) => {
+      const actualPage = "/category";
+      const queryParams = { id: req.params.id };
+      app.render(req, res, actualPage, queryParams);
+    });
+
+
     server.get("/category/:name", (req, res) => {
       const actualPage = "/category";
       const queryParams = { name: req.params.name };
@@ -25,7 +32,7 @@ app
       console.log("> Ready on http://localhost:3000");
     });
   })
-  .catch(ex => {
+  .catch(ex => {``
     console.error(ex.stack);
     process.exit(1);
   });
