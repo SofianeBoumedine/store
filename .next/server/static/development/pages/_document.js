@@ -154,7 +154,7 @@ function (_Document) {
   _createClass(MyDocument, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("html", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["Head"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", null, "Store"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("html", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["Head"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
         name: "author",
         content: "Geonwoo Jeong"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
