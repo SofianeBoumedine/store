@@ -1,7 +1,7 @@
 import { gql } from "apollo-boost";
 
 export const PRODUCT_FRAGMENT = gql`
-  fragment Productitems on Product {
+  fragment ProductItems on Product {
     id
     name
     detail
@@ -10,4 +10,4 @@ export const PRODUCT_FRAGMENT = gql`
       url
     }
   }
-`
+`;

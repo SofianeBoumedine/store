@@ -8,10 +8,10 @@ export const INDEX_QUERY = gql`
       name
     }
     onSale: products(where: { onSale: true }) {
-      ...Productitems
+      ...ProductItems
     }
     allProducts: products(where: { onSale: false }) {
-      ...Productitems
+      ...ProductItems
     }
   }
   ${PRODUCT_FRAGMENT}

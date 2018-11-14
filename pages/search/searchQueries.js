@@ -11,7 +11,7 @@ export const SEARCH_QUERY = gql`
         ]
       }
     ) {
-      ...Productitems
+      ...ProductItems
     }
   }
   ${PRODUCT_FRAGMENT}

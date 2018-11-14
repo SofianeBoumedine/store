@@ -11,14 +11,6 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-<<<<<<< HEAD
-    "/category": [
-=======
-    "/search": [
->>>>>>> 6c07618031c925363871914d7dfccba399b8b159
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
