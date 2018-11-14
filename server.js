@@ -11,11 +11,10 @@ app
     const server = express();
 
     server.get("/product/:id", (req, res) => {
-      const actualPage = "/category";
+      const actualPage = "/product";
       const queryParams = { id: req.params.id };
       app.render(req, res, actualPage, queryParams);
     });
-
 
     server.get("/category/:name", (req, res) => {
       const actualPage = "/category";
@@ -32,7 +31,8 @@ app
       console.log("> Ready on http://localhost:3000");
     });
   })
-  .catch(ex => {``
+  .catch(ex => {
+    ``;
     console.error(ex.stack);
     process.exit(1);
   });
