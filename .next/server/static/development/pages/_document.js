@@ -169,6 +169,9 @@ function (_Document) {
         name: "theme-color",
         content: "black"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
+        rel: "manifest",
+        href: "/static/manifest.json"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
         href: "https://cdnjs.cloudflare.com/ajax/libs/antd/3.10.3/antd.min.css",
         rel: "stylesheet"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("style", null, "body { background-color: #EFF2F5!important}")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("body", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["NextScript"], null)));

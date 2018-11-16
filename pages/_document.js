@@ -13,6 +13,7 @@ export default class MyDocument extends Document {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="description" content="Store, buy all your swag" />
           <meta name="theme-color" content="black" />
+          <link rel="manifest" href="/static/manifest.json" />
           <link
             href="https://cdnjs.cloudflare.com/ajax/libs/antd/3.10.3/antd.min.css"
             rel="stylesheet"
