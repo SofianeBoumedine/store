@@ -4,6 +4,7 @@ import React from "react";
 import { ApolloProvider } from "react-apollo";
 const { Footer } = Layout;
 import withApollo from "../lib/withApollo";
+import withNProgress from "next-nprogress";
 
 class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
@@ -31,4 +32,4 @@ class MyApp extends App {
   }
 }
 
-export default withApollo(MyApp);
+export default withNProgress()(withApollo(MyApp));
