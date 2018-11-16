@@ -1,6 +1,6 @@
 const express = require("express");
 const next = require("next");
-
+const { resolve } = require("path");
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
@@ -32,7 +32,6 @@ app
     });
   })
   .catch(ex => {
-    ``;
     console.error(ex.stack);
     process.exit(1);
   });
