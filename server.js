@@ -10,6 +10,10 @@ app
   .then(() => {
     const server = express();
 
+    server.get("/sw.js", (req, res) => {
+      app.serveStatic(req, res, resolve("./static/service-worker.js"));
+    });
+
     server.get("/product/:id", (req, res) => {
       const actualPage = "/product";
       const queryParams = { id: req.params.id };

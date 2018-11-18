@@ -233,6 +233,17 @@ function (_App) {
   }
 
   _createClass(MyApp, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./sw.js").then(function (result) {
+          return console.log("ServiceWorker Registered : ", result);
+        }).catch(function (error) {
+          return console.log("Can't Register ServiceWorker :", error);
+        });
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this$props = this.props,
