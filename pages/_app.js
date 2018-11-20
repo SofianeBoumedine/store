@@ -23,19 +23,24 @@ class MyApp extends App {
       navigator.serviceWorker
         .register("./sw.js")
         .then(swReg => {
-          console.log("ServiceWorker Registered : ", swReg);
-          Notification.requestPermission().then(permission => {
-            if (permission === "granted") {
-              swReg.pushManager
-                .subscribe({
-                  userVisibleOnly: true,
-                  applicationServerKey: convertDataURIToBinary(
-                    "BAwL3KsjQMgUhhFiDukvs5rvrVu5F-CGuh4aTkfXXHa_lYV0C6mtWPY9KlxefVJyYO4eYbyJMKe1VYZcfGt07E4"
-                  )
-                })
-                .then(pushSubscriptionObject => {
-                  console.log(pushSubscriptionObject);
-                });
+          swReg.pushManager.getSubscription().then(subscription => {
+            if (subscription === null) {
+              Notification.requestPermission().then(permission => {
+                if (permission === "granted") {
+                  swReg.pushManager
+                    .subscribe({
+                      userVisibleOnly: true,
+                      applicationServerKey: convertDataURIToBinary(
+                        "BAwL3KsjQMgUhhFiDukvs5rvrVu5F-CGuh4aTkfXXHa_lYV0C6mtWPY9KlxefVJyYO4eYbyJMKe1VYZcfGt07E4"
+                      )
+                    })
+                    .then(pushSubscriptionObject => {
+                      console.log(pushSubscriptionObject);
+                    });
+                }
+              });
+            } else {
+              console.log(subscription);
             }
           });
         })

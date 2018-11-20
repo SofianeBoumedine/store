@@ -14,3 +14,11 @@ self.addEventListener("fetch", event => {
     )
   );
 });
+
+self.addEventListener("push", event => {
+  const title = "Store";
+  const options = {
+    body: event.data.text()
+  };
+  event.waitUntil(self.registration.showNotification(title, options));
+});
